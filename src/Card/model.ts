@@ -8,3 +8,9 @@ export interface CardProduct extends Products {
     amount: number;
 }
 
+export interface IModel{
+    cardProducts:Array<CardProduct>;
+    handleremovefromcard:Function;
+    totalprice:number;
+}
+

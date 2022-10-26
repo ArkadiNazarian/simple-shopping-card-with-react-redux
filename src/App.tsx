@@ -1,6 +1,7 @@
 import { Provider } from "react-redux";
-import { Card } from "./Card/view";
-import { ProductsForm } from "./Products/view";
+import { Card } from "./Card/index";
+import { ProductsForm } from "./CreateProducts/index";
+import { ViewProductsForm } from "./ViewProduct/index";
 import { store } from "./store";
 
 export function App() {
@@ -8,6 +9,7 @@ export function App() {
     <Provider store={store}>
       <div className="App">
         <ProductsForm />
+        <ViewProductsForm/>
         <Card/>
       </div>
     </Provider>
